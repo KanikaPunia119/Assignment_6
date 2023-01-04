@@ -10,8 +10,7 @@ void SieveOfEratosthenes(int n)
 	{
 		if (prime[p-1] == 1) 
 		{
-			// Numbers before pXp have already been crossed
-			for (int i = p * p; i <= n; i += p)
+				for (int i = p * p; i <= n; i += p)
 	 			prime[i-1] = 0;
 		}
 	}
